@@ -4,116 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribal Heritage Museum | Experience Indigenous Heritage</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <nav>
-        <div class="navbar-gradient"></div>
-        <div class="nav1">
-            <div class="nav1-left">
-                <img src="Resource/Logos/cg_logo.png" alt="Chhattisgarh Government Logo">
-                <p>Chhattisgarh Tribal Museum &<br>Freedom Fighter Museum</p>
+        <div class="nav-subcontainer1">
+            <div class="nav-subcontainer1-left">
+                <img class="nav-logo" src="Resource/Logos/cg_logo.png" alt="Chhattisgarh State Govt. Logo">
+                <img class="nav-logo" src="Resource/Logos/TRTI CG english logo curve.png" alt="TRTI Logo">
+                <p class="nav-title1">Chhattisgarh Tribal Museum &<br>Freedom Fighter Museum</p>
             </div>
-            <div class="nav1-right-buttons">
-                <div class="btn1">Hindi</div>
-                <div class="btn2">Visit Now</div>
-                <div class="btn3">Bookings</div>
+            
+            <div class="nav-subcontainer1-right">
+                <button class="nav-btn">Hindi</button>
+                <button class="nav-btn">Visit Now</button>
+                <button class="nav-btn">Bookings</button>
             </div>
-            <img id="nav1-right-hamburger" src="Resource/Icons/hamburger_menu.svg"></img>
+            <img class="nav-subcontainer1-right-hamburger" src="Resource/Icons/hamburger_menu.svg" alt="Menu Button">
         </div>
 
-        <div class="nav2">
-            <div class="nav2-left">
-                <p>Department of Tribal, Scheduled Caste, Backward Classes and Minorities</p>
-            </div>
-            <div class="nav2-right">
-                <ul>
-                    <li>About Us</li>
-                    <li>R&D Activities</li>
-                    <li>Galleries</li>
-                    <li>Collection</li>
-                </ul>
+        <div class="nav-subcontainer2">
+            <p class="nav-subcontainer2-left nav-title2">Department of Tribal, Scheduled Caste, Backward Classes and Minorities</p>
+            
+            <div class="nav-subcontainer2-right">
+                <a href="#" class="nav-subcontainer2-tags">About Us</a>
+                <a href="#" class="nav-subcontainer2-tags">R&D Activities</a>
+                <a href="#" class="nav-subcontainer2-tags">Galleries</a>
+                <a href="#" class="nav-subcontainer2-tags">Collection</a>
             </div>
         </div>
     </nav>
+
+    <section class="slideshow1"></section>
     
-    <main>
-        <div class="slideshow1"></div>
-        <div class="slideshow1-ghost"></div>
-        
-        <div id="bannerSection">
-            <img src="Resource/Others/banner_with_stripes.png" class="bannerImg" alt="Museums">
-            <a href="#" id="museum-link1" class="museum-link"><pre>Chhattisgarh Tribal<br>Museum</pre></a>
-            <a href="#" id="museum-link2" class="museum-link"><pre>Tribal Freedom<br>Fighter Museum</pre></a>
-        </div>
+    <section class="banner">
+        <div class="banner-link1 banner-link">Chhattisgarh Tribal<br>Museum</div>
+        <div class="banner-link2 banner-link">Tribal Freedom<br>Fighter Museum</div>
+    </section>
 
-        <div class="leaders">
-            <div id="leaders-title">Our Leadership</div>
-            <div id="leaders-cards">
-                <div class="leader1 leader-card">
-                    <img src="Resource/Logos/CM_CG.jpg" alt="Vishnu Deo Sai" class="leader1-img">
-                    <div class="leader-name">Vishnu Deo Sai</div>
-                    <p class="leader-desig">Chief Minister, Chhattisgarh</p>
-                    <p class="leader-quote">"Tribal communities have played a significant role in India's freedom struggle. Their cultural heritage is our national treasure that we must preserve for future generations."</p>
-                </div>
-                <div class="leader2 leader-card">
-                    <img src="Resource/Logos/Tribal Minister.jpg" alt="Ramvichar Netam" class="leader2-img">
-                    <div class="leader-name">Ramvichar Netam</div>
-                    <p class="leader-desig">Minister of Tribal Welfare, Chhattisgarh</p>
-                    <p class="leader-quote">"Our goal is to create awareness about the rich tribal heritage and ensure that indigenous knowledge systems are recognized and respected."</p>
+    <section class="leaders">
+        <p class="leaders-title">Leadership</p>
+        <div class="leader-cards">
+            <div class="leader-card">
+                <img class="leader-card-img" src="Resource/Logos/CM_CG.jpg" alt="Vishnu Deo Sai">
+                <div class="leader-card-text">
+                    <div class="leader-card-name">Vishnu Deo Sai</div>
+                    <div class="leader-card-designation">Chief Minister, Chhattisgarh</div>
+                    <div class="leader-card-quote">"Tribal communities have played a significant role in India's freedom struggle. Their cultural heritage is our national treasure that we must preserve for future generations."</div>
                 </div>
             </div>
-            <!-- <div class="floral_imgs">
-                <img src="Resource/Others/floral_design_left.png" alt="Floral Art" class="floral-left floral-art">
-                <img src="Resource/Others/floral_design_right.png" alt="Floral Art" class="floral-right floral-art">
-            </div> -->
-        </div>
-
-        <div class="slideshow2">
-            <div class="slideshow2-title">Journey Into The Tribal Past</div>
-            <div class="slideshow2-area">
-                <img class="left-slideshow2-btn slideshow2-btn" src="Resource/Icons/slideshow2_arrow.png" alt="Turn Left">
-                <div class="slideshow2-container">
-                    <img src="Resource/Others/placeholder.png" alt="Image" class="slideshow2-img">
-                    <div class="slideshow2-text">
-                        <div class="slideshow2-main">Dummy Text</div>
-                        <div class="slideshow2-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
-                    </div>
-                </div>
-                <img class="right-slideshow2-btn slideshow2-btn" src="Resource/Icons/slideshow2_arrow.png" alt="Turn Right">
-            </div>
-        </div>
-
-        <!-- <div class="conclusion">
-            <div class=""impact>
-                <div class="impact-title">Museum Impact</div>
-                <div class="impact-cards">
-                    <div class="impact-card">
-                        <div class="impact-card-num">3000+</div>
-                        <div class="impact-card-title">Artifacts Preserved</div>
-                        <div class="impact-card-info">Carefully curated artifacts representing the rich heritage of indigenous communities.</div>
-                    </div>
-                    <div class="impact-card">
-                        <div class="impact-card-num">43</div>
-                        <div class="impact-card-title">Tribal Communities</div>
-                        <div class="impact-card-info">Representing the diverse cultures and traditions of indigenous peoples.</div>
-                    </div>
-                    <div class="impact-card">
-                        <div class="impact-card-num">50000+</div>
-                        <div class="impact-card-title">Annual Visitors</div>
-                        <div class="impact-card-info">Engaging with our exhibits, workshops, and educational programs.</div>
-                    </div>
-                    <div class="impact-card">
-                        <div class="impact-card-num">100+</div>
-                        <div class="impact-card-title">Educational Programs</div>
-                        <div class="impact-card-info">Workshops, seminars, and outreach initiatives conducted annually.</div>
-                    </div>
+            <div class="leader-card">
+                <img class="leader-card-img" src="Resource/Logos/Tribal Minister.jpg" alt="Ramvichar Netam">
+                <div class="leader-card-text">
+                    <div class="leader-card-name">Ramvichar Netam</div>
+                    <div class="leader-card-designation">Minister of Tribal Welfare, Chhattisgarh</div>
+                    <div class="leader-card-quote">"Our goal is to create awareness about the rich tribal heritage and ensure that indigenous knowledge systems are recognized and respected."</div>
                 </div>
             </div>
-        </div> -->
-    </main>
-</body>
-</html>
+        </div>
+    </section>
+
+    <div class="strip"></div>
+
+    <section class="history">
+        <p class="history-title">Journey Into The Tribal Past</p>
+        <div class="history-container">
+            <img class="history-left history-arrow" src="Resource/Icons/left-arrow.svg" alt="Turn Left">
+            <div class="history-main">
+                <img class="history-image" src="Resource/Others/placeholder.png" alt="Placeholder Image">
+                <div class="history-text">
+                    <p class="history-main-title">Dummy Text</p>
+                    <p class="history-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni pariatur quaerat alias officia doloribus aperiam incidunt ex, quidem exercitationem! Maxime beatae quae magnam quod consequuntur fugiat libero earum nam obcaecati?</p>
+                </div>
+            </div>
+            <img class="history-right history-arrow" src="Resource/Icons/left-arrow.svg" alt="Turn Right">
+        </div>
+    </section>
+    
+    <section class="impact">
+        <p class="impact-title">Museum Impact</p>
+        <div class="impact-cards">
+            <div class="impact-card">
+                <p class="impact-card-num">500+</p>
+                <p class="impact-card-title">Artifacts Preserved</p>
+                <p class="impact-card-info">Carefully curated artifacts representing the rich heritage of indigenous communities.</p>
+            </div>
+            <div class="impact-card">
+                <p class="impact-card-num">43</p>
+                <p class="impact-card-title">Tribal Communities</p>
+                <p class="impact-card-info">Representing the diverse cultures and traditions of indigenous peoples.</p>
+            </div>
+            <div class="impact-card">
+                <p class="impact-card-num">2000+</p>
+                <p class="impact-card-title">Annual Visitors</p>
+                <p class="impact-card-info">Engaging with our exhibits, workshops, and educational programs.</p>
+            </div>
+            <div class="impact-card">
+                <p class="impact-card-num">15+</p>
+                <p class="impact-card-title">Educational Programs</p>
+                <p class="impact-card-info">Workshops, seminars, and outreach initiatives conducted annually.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+                <div class="footer-smlinks footer-element">
+                    <p class="footer-title">Social Media Links:</p>
+                    <!-- 4 SVGs -->
+                    <br><br>
+                    <p class="footer-title">Contact:</p>
+                    <a class="footer-text" href="mailto:triraipur0771@gmail.com">Mail Us</a>
+                    <p class="footer-text">0771-2960530</p>
+                </div>
+                
+                <div class="footer-timings footer-element">
+                    <p class="footer-title">Opening Hours:</p>
+                    <p class="footer-text">Tuesday-Sunday: 10:30 AM - 5 PM</p>
+                    <p class="footer-text">Closed on Monday and National Holidays</p>
+                </div>
+                
+                <div class="footer-location footer-element">
+                    <p class="footer-title">Location Map:</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.879279168496!2d81.76251157501767!3d21.129224215133526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c5001609da89%3A0x2907ae361d533fef!2sTribal%20Freedom%20Fighter%20Museum%2C%20Naya%20Raipur!5e1!3m2!1sen!2sin!4v1757111837008!5m2!1sen!2sin" height="200px" width="300px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <div class="footer-tags footer-element">
+                    <a class="footer-title">Useful Links:</a>
+                    <a class="footer-text">About Us</a>
+                    <a class="footer-text">Support Us</a>
+                    <a class="footer-text">Nearby Places</a>
+                    <a class="footer-text">Important Sites</a>
+                    <a class="footer-text">Orders/Tenders</a>
+                    <a class="footer-text">News/Media</a>
+                </div>
+                
+                <div class="footer-visitus footer-element">
+                    <p class="footer-title">Visit Us:</p>
+                    <p class="footer-text">Sector 24,<br>Near Purkhouti Muktangan,<br>Chhattisgarh 492101</p>
+                </div>
+                
+                <div class="footer-copyright footer-text">&copy; 2025 Chhattisgarh Tribal Museum and Freedom Fighter Museum. All rights reserved by IIIT Naya Raipur.</div>
+            </div>
+        </footer>
+    </body>
+    </html>
