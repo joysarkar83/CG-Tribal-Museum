@@ -211,12 +211,12 @@ nav{
         padding-top: 12.5rem;
     }
     @media (max-width: 500px) {
-        padding-top: 5rem;
+        padding-top: 6rem;
     }
 }
 .floral-bg-left{
     width: 20%;
-    height: 80%;
+    height: 80rem;
     transform: rotateZ(180deg);
     background-image: url(Resource/Others/floral_design_right.png);
     background-position: center;
@@ -231,7 +231,7 @@ nav{
 }
 .floral-bg-right{
     width: 20%;
-    height: 80%;
+    height: 80rem;
     background-image: url(Resource/Others/floral_design_right.png);
     background-position: center;
     background-repeat: no-repeat;
