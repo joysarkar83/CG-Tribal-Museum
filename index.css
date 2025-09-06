@@ -155,6 +155,7 @@ nav{
         display: none;
     }
     .nav-subcontainer2-left{
+        padding-left: 0rem;
         margin: auto;
     }
 }
@@ -197,6 +198,51 @@ nav{
     top: 60%;
 }
 
+
+/* FLORAL BACKGROUND */
+.floral-bg{
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 875px) {
+        padding-top: 12.5rem;
+    }
+    @media (max-width: 500px) {
+        padding-top: 5rem;
+    }
+}
+.floral-bg-left{
+    width: 20%;
+    height: 80%;
+    transform: rotateZ(180deg);
+    background-image: url(Resource/Others/floral_design_right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: 875px) {
+        width: 50vw;
+        height: auto;
+        aspect-ratio: 363/532;
+        background-size: cover;
+    }
+}
+.floral-bg-right{
+    width: 20%;
+    height: 80%;
+    background-image: url(Resource/Others/floral_design_right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: 875px) {
+        width: 50vw;
+        height: auto;
+        aspect-ratio: 363/532;
+        background-size: cover;
+    }
+}
 
 /* LEADERS */
 .leaders{
@@ -420,7 +466,7 @@ nav{
 .impact-title{
     color: var(--maroon);
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 4vw; 
     margin-top: 1.5rem;
 }
 .impact-cards{
