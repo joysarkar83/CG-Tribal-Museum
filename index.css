@@ -208,10 +208,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     @media (max-width: 875px) {
-        padding-top: 12.5rem;
+        padding-top: 30vh;
     }
     @media (max-width: 500px) {
-        padding-top: 6rem;
+        padding-top: 15vh;
     }
 }
 .floral-bg-left{
@@ -223,7 +223,7 @@ nav{
     background-repeat: no-repeat;
     background-size: contain;
     @media (max-width: 875px) {
-        width: 50vw;
+        width: 40vw;
         height: auto;
         aspect-ratio: 363/532;
         background-size: cover;
@@ -237,7 +237,7 @@ nav{
     background-repeat: no-repeat;
     background-size: contain;
     @media (max-width: 875px) {
-        width: 50vw;
+        width: 40vw;
         height: auto;
         aspect-ratio: 363/532;
         background-size: cover;
@@ -601,6 +601,16 @@ footer{
     @media (max-width: 500px) {
         font-size: 0.4rem;
     }
+}
+.footer-title-location{
+    margin-bottom: 1rem;
+}
+.footer-icon{
+    height: 1.5rem;
+    margin: 0.2rem;
+}
+.footer-icon a:first-child img{
+    height: 2rem;
 }
 .footer-location{
     grid-row: 1/4;
