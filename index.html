@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_slideshow.css">
 </head>
 <body>
     <nav>
         <div class="nav-subcontainer1">
             <div class="nav-subcontainer1-left">
-                <img class="nav-logo" src="Resource/Logos/cg_logo.png" alt="Chhattisgarh State Govt. Logo">
-                <img class="nav-logo" src="Resource/Logos/TRTI CG english logo curve.png" alt="TRTI Logo">
-                <p class="nav-title1">Chhattisgarh Tribal Museum &<br>Freedom Fighter Museum</p>
+                <a href="https://cgstate.gov.in/en" target="_blank"><img class="nav-logo" src="Resource/Logos/cg_logo.png" alt="Chhattisgarh State Govt. Logo"></a>
+                <a href="https://cgtrti.gov.in/" target="_blank"><img class="nav-logo" src="Resource/Logos/TRTI CG english logo curve.png" alt="TRTI Logo"></a>
+                <a href="index.html"><p class="nav-title1">Chhattisgarh Tribal Museum &<br>Freedom Fighter Museum</p></a>
             </div>
             
             <div class="nav-subcontainer1-right">
@@ -38,16 +39,27 @@
         </div>
     </nav>
 
-    <section class="slideshow1"></section>
+    <!-- <section class="slideshow1"></section> -->
+
+    <div class="slideshow1">
+        <div class="slide1" style="background-image: url(Resource/SlideShow1/1.jpg);"></div>
+        <div class="slide1" style="background-image: url(Resource/SlideShow1/2.jpg);"></div>
+        <div class="slide1" style="background-image: url(Resource/SlideShow1/3.jpg);"></div>
+        <div class="slide1" style="background-image: url(Resource/SlideShow1/4.jpg);"></div>
+        <div class="slide1" style="background-image: url(Resource/SlideShow1/5.jpg);"></div>
+        <div class="slide1" style="background-image: url(Resource/SlideShow1/6.jpg);"></div>
+        <div class="slide1" style="background-image: url(Resource/SlideShow1/7.jpg);"></div>
+    </div>
+
     
     <section class="banner">
-        <div class="banner-link1 banner-link">Chhattisgarh Tribal<br>Museum</div>
-        <div class="banner-link2 banner-link">Tribal Freedom<br>Fighter Museum</div>
+        <p class="banner-link1 banner-link">Chhattisgarh Tribal<br>Museum</p>
+        <p class="banner-link2 banner-link">Tribal Freedom<br>Fighter Museum</p>
     </section>
 
     <div class="floral-bg">
-        <div class="floral-bg-left"></div>
-        <div class="floral-bg-right"></div>
+        <div class="floral-bg-left florals"></div>
+        <div class="floral-bg-right florals"></div>
     </div>
     <section class="leaders">
         <p class="leaders-title">Leadership</p>
@@ -76,7 +88,7 @@
     <section class="history">
         <p class="history-title">Journey Into The Tribal Past</p>
         <div class="history-container">
-            <img class="history-left history-arrow" src="Resource/Icons/left-arrow.svg" alt="Turn Left">
+            <svg class="history-left history-arrow" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" viewBox="0 0 20 20"><path d="M15 18l-6-6 6-6"/></svg>
             <div class="history-main">
                 <img class="history-image" src="Resource/Others/placeholder.png" alt="Placeholder Image">
                 <div class="history-text">
@@ -84,7 +96,7 @@
                     <p class="history-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni pariatur quaerat alias officia doloribus aperiam incidunt ex, quidem exercitationem! Maxime beatae quae magnam quod consequuntur fugiat libero earum nam obcaecati?</p>
                 </div>
             </div>
-            <img class="history-right history-arrow" src="Resource/Icons/left-arrow.svg" alt="Turn Right">
+            <svg class="history-right history-arrow" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20"><path d="M9 6l6 6-6 6"/></svg>
         </div>
     </section>
     
@@ -124,7 +136,7 @@
                     <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="Resource/Icons/youtube.svg" alt="YouTube Icon""></a>
                     <br><br>
                     <p class="footer-title">Contact:</p>
-                    <a class="footer-text" href="mailto:triraipur0771@gmail.com" target="_blank">Mail Us</a>
+                    <a class="footer-text" href="mailto:triraipur0771@gmail.com" target="_blank"><p class="footer-text">Mail Us</p></a>
                     <p class="footer-text">0771-2960530</p>
                 </div>
                 
@@ -136,7 +148,7 @@
                 
                 <div class="footer-location footer-element">
                     <p class="footer-title footer-title-location">Location Map:</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.7634658522675!2d81.75928696990009!3d21.12901032778747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c5001609da89%3A0x2907ae361d533fef!2sTribal%20Freedom%20Fighter%20Museum%2C%20Naya%20Raipur!5e1!3m2!1sen!2sin!4v1757140682743!5m2!1sen!2sin" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.7634658522675!2d81.75928696990009!3d21.12901032778747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c5001609da89%3A0x2907ae361d533fef!2sTribal%20Freedom%20Fighter%20Museum%2C%20Naya%20Raipur!5e1!3m2!1sen!2sin!4v1757140682743!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 
                 <div class="footer-tags footer-element">
@@ -151,11 +163,14 @@
                 
                 <div class="footer-visitus footer-element">
                     <p class="footer-title">Visit Us:</p>
-                    <p class="footer-text">Sector 24,<br>Near Purkhouti Muktangan,<br>Chhattisgarh 492101</p>
+                    <p class="footer-text">Sector 24,</p>
+                    <p class="footer-text">Near Purkhouti Muktangan,</p>
+                    <p class="footer-text">Chhattisgarh 492101</p>
                 </div>
                 
                 <div class="footer-copyright footer-text">&copy; 2025 Chhattisgarh Tribal Museum and Freedom Fighter Museum. All rights reserved by IIIT Naya Raipur.</div>
             </div>
         </footer>
+        <script src="index.js"></script>
     </body>
     </html>
