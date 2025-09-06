@@ -477,6 +477,7 @@ nav{
 }
 .history-right{
     padding-right: 2rem;
+    padding-left: 0;
 }
 .history-right:hover{
     transform: scale(1.2) translateX(0.5rem);
