@@ -196,13 +196,13 @@ nav{
 
 /* BANNER SECTION */
 .banner{
-    aspect-ratio: 16/10;
+    aspect-ratio: 1680/989;
     width: 100%;
     background-image: url(/Resource/Others/banner_with_stripes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
+    /* position: relative;
     top: -10px;
     @media (min-width: 1500px) {
         top: -40px;
@@ -212,7 +212,7 @@ nav{
     }
     @media (max-width: 500px) {
         top: -7px;
-    }
+    } */
 }
 .banner-link{
     font-weight: bold;
