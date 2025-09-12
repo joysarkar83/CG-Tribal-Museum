@@ -181,9 +181,10 @@ nav{
     color: var(--dull);
 }
 
+
 /* SLIDESHOW #1 */
 .slide1{
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
     position: static;
     background-position: center;
@@ -195,17 +196,28 @@ nav{
 
 /* BANNER SECTION */
 .banner{
-    aspect-ratio: 420/291;
+    aspect-ratio: 16/10;
     width: 100%;
     background-image: url(Resource/Others/banner_with_stripes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+    top: -10px;
+    @media (min-width: 1500px) {
+        top: -40px;
+    }
+    @media (max-width: 1100px) {
+        top: -20px;
+    }
+    @media (max-width: 500px) {
+        top: -7px;
+    }
 }
 .banner-link{
     font-weight: bold;
     font-size: 3vw;
-    padding: 0rem 2rem;
+    padding: 0rem 3rem;
     box-sizing: border-box;
     text-shadow: 3px 3px 10px var(--maroon);
 }
@@ -260,6 +272,7 @@ nav{
     transform: rotateZ(180deg);
     
 }
+
 
 /* LEADERS */
 .leaders{
@@ -344,7 +357,12 @@ nav{
         font-size: 0.6rem;
     }
 }
+.leader-card:hover{
+    transform: scale(1.02);
+}
 
+
+/* STRIP */
 .strip{
     height: 3rem;
     width: 100vw;
@@ -358,9 +376,6 @@ nav{
     }
     margin-top: 5rem;
 }
-.leader-card:hover{
-    transform: scale(1.02);
-}
 
 
 /* HISTORY */
@@ -373,6 +388,7 @@ nav{
     align-items: center;
     position: relative;
     top: 0px;
+    margin-top: 7rem;
 }
 .history-title{
     margin-top: 1.5rem;
@@ -393,10 +409,10 @@ nav{
 .history-arrow{
     padding-left: 2rem;
     fill: var(--text);
-    background: transparent;   /* no button background */
-    color: #FFFFFF;            /* white arrow */
-    font-size: 2rem;           /* arrow size */
-    border: none;              /* no border */
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 2rem;
+    border: none;
     cursor: pointer;
 
     @media (max-width: 1000px) {
@@ -580,9 +596,6 @@ nav{
         font-size: 0.4rem;
     }
 }
-.impact-card:hover{
-    transform: scale(1.03);
-}
 
 
 /* Footer */
@@ -604,7 +617,7 @@ footer{
         width: 90%;
         height: auto;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr 0.75fr 0.5fr;
         column-gap: 0rem;
     }
 }
@@ -641,7 +654,7 @@ footer{
     grid-column: 2/3;
 }
 .footer-copyright{
-    grid-row: 4/5;
+    grid-row: 3/4;
     grid-column: 1/4;
     font-size: 0.7rem;
     text-align: center;
@@ -677,8 +690,8 @@ footer{
     padding-top: 1.5rem;
 }
 .footer-title:hover, .footer-text:hover, .footer-map:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 .footer-icon:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
