@@ -198,7 +198,7 @@ nav{
 .banner{
     aspect-ratio: 16/10;
     width: 100%;
-    background-image: url(Resource/Others/banner_with_stripes.png);
+    background-image: url(/Resource/Others/banner_with_stripes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
