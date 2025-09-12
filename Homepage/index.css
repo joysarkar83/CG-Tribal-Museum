@@ -257,7 +257,7 @@ nav{
 .florals{
     width: 20%;
     height: 80rem;
-    background-image: url(Resource/Others/floral_design_right.png);
+    background-image: url(/Resource/Others/floral_design_right.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -366,7 +366,7 @@ nav{
 .strip{
     height: 3rem;
     width: 100vw;
-    background-image: url(Resource/Others/strip.png);
+    background-image: url(/Resource/Others/strip.png);
     background-position: center;
     background-repeat: repeat-x;
     background-size: contain;
@@ -507,7 +507,7 @@ nav{
 
 /* IMPACT */
 .impact{
-    background-image: url(Resource/Others/background.png);
+    background-image: url(/Resource/Others/background.png);
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
