@@ -227,12 +227,13 @@ nav{
     position: relative;
     top: 70%;
     right: -30%;
+    z-index: 5;
 }
 .banner-link:hover{
-    transform: scale(1.05) translateX(2rem);
+    transform: scale(1.01) translateX(0.2rem);
 }
 .banner-link2:hover{
-    transform: scale(1.05) translateX(-1.8rem);
+    transform: scale(1.01) translateX(-0.2rem);
 }
 
 
