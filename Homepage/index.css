@@ -221,13 +221,39 @@ nav{
     position: relative;
     top: 15%;
     left: 5%;
+    @media (max-width: 1050px) {
+        left: 0%
+    }
+    @media (max-width: 680px) {
+        left: 0%
+    }
+    @media (max-width: 600px) {
+        left: -5%
+    }
 }
 .banner-link2{
     text-align: right;
     position: relative;
     top: 70%;
-    right: -30%;
+    left: 30%;
     z-index: 5;
+    box-sizing: border-box;
+    @media (max-width: 1050px) {
+        left: 20%
+    }
+    @media (max-width: 680px) {
+        left: 15%
+    }
+    @media (max-width: 560px) {
+        left: 10%
+    }
+    @media (max-width: 500px) {
+        left: 5%
+    }
+    @media (max-width: 450px) {
+        top: 60%;
+        left: 0%
+    }
 }
 .banner-link:hover{
     transform: scale(1.01) translateX(0.2rem);
@@ -235,6 +261,42 @@ nav{
 .banner-link2:hover{
     transform: scale(1.01) translateX(-0.2rem);
 }
+.nav-subcontainer2-item {
+  position: relative;
+  display: inline-block;
+}
+.nav-subcontainer2-tags {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--text);
+}
+.dropdown {
+  list-style: none;
+  position: absolute;
+  top: 100%;   /* directly below title */
+  left: 0;
+  width: 12rem;
+  margin: 0;
+  padding: 0;
+  background-color: #55000094;
+  border-radius: 0.75rem;
+  z-index: 15;
+  display: none;
+}
+.dropdown li a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--text);
+  text-decoration: none;
+  text-align: left;
+}
+.dropdown li a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+.nav-subcontainer2-item:hover .dropdown {
+  display: block;
+}
+
 
 
 /* FLORAL BACKGROUND */
