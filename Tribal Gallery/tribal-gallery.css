@@ -236,9 +236,28 @@ footer{
     grid-row: 2/3;
     grid-column: 1/2;
 }
+.footer-sm-adjust{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-sm-adjust a{
+    display: inline-block;
+}
 .footer-visitus{
     grid-row: 2/3;
     grid-column: 2/3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footer-visitus{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.footer-visitus p, .footer-timings p{
+    line-height: 8px;
 }
 .footer-contact{
     grid-row: 3/4;
