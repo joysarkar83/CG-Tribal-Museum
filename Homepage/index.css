@@ -426,6 +426,51 @@ nav{
 }
 
 
+/* TICKET */
+.ticket{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-image: url(/Resource/Others/ticket-bg.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+.ticket-title{
+    margin-top: 6rem;
+    color: var(--maroon);
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+    @media (max-width: 500px) {
+        margin-top: 2rem;
+    }
+}
+.ticket-image{
+    width: 80%;
+    aspect-ratio: 10/3;
+    margin: auto;
+    padding-bottom: 8rem;
+    filter: drop-shadow(0 0 0.5rem var(--maroon));
+    transition: all 0.1s linear;
+}
+.ticket-image-full{
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
+.ticket-image-half{
+    aspect-ratio: 25/9;
+    padding-bottom: 3rem;
+    @media (min-width: 500px) {
+        display: none;
+    }
+}
+
 /* STRIP */
 .strip{
     height: 3rem;
@@ -659,6 +704,60 @@ nav{
     @media (max-width: 590px) {
         font-size: 0.4rem;
     }
+}
+
+
+/* FAQ */
+.faq{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: url(/Resource/Others/ticket-bg.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+.faq-title{
+    margin-top: 3rem;
+    color: var(--maroon);
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+}
+.faq-container{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+.faq-tab{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--yellow);
+    padding: 20px 40px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--maroon);
+}
+.faq-tab:hover{
+    background-color: var(--btn_click);
+}
+.tab-arrow{
+    transform: rotate(90deg);
+    height: 1.5rem;
 }
 
 
