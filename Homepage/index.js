@@ -17,6 +17,22 @@ setInterval(() => {
 
 
 
+// Hide Hamburger
+const hamburgerBtn = document.querySelector(".nav-subcontainer1-right-hamburger img");
+const hamburgerMenu = document.querySelector(".nav-subcontainer1-right-hamburger .dropdown");
+
+hamburgerBtn.addEventListener("click", (e) => {
+  e.stopPropagation(); // prevent immediate close
+  hamburgerMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+  if (!hamburgerMenu.contains(e.target) && e.target !== hamburgerBtn) {
+    hamburgerMenu.classList.remove("active");
+  }
+});
+
+
 
 // Image Tilt Effect
 window.onload = function () {
