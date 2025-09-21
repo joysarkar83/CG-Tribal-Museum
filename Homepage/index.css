@@ -177,7 +177,7 @@ nav{
 .nav-subcontainer1-right-hamburger .dropdown.active {
   display: block;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0); 
 }
 @media (max-width: 575px) {
     .nav-subcontainer1-right, .nav-subcontainer2-right{
@@ -250,6 +250,25 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -10;
+}
+.slideshow1 {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+.slideshow1::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.slide1 {
+  flex: 0 0 100%; /* each slide takes full width */
+  scroll-snap-align: start;
+  height: 100vh; /* full viewport height */
+  background-size: cover;
+  background-position: center;
 }
 
 
