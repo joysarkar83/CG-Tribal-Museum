@@ -8,7 +8,7 @@
 :root {
     --maroon: #550000;
     --text: #ffffff;
-    --bg: #F8F4EC;
+    --bg: #e9d9b8bf;
     --yellow: #FFD700;
     --dull: #f4f4f4;
     --btn_click: #d0b104;
@@ -27,12 +27,6 @@ a {
     transition: all 0.2s ease-out;
 }
 
-a:hover {
-    color: var(--text);
-}
-
-
-
 
 .parallax {
     background-image: url("/Resource/Gallery/IMG\ \(17\).JPG");
@@ -47,7 +41,6 @@ a:hover {
     position: relative;
     top: 35vh;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-
 }
 
 .parallax-title p {
@@ -56,11 +49,8 @@ a:hover {
 }
 
 
-
-
-
 .gallery-section {
-    background-color: #fff2d0;
+    background-color: var(--bg);
     padding: 60px 20px;
     min-height: 400px;
     text-align: center;
@@ -75,16 +65,13 @@ a:hover {
 }
 
 .color-strip {
+    background-color: var(--bg);
     height: 50px;
-    background-color: #fff2d0;
     margin: 0;
 }
 
-body {
-    background-color: #fff2d0;
-}
-
 .gallery-container {
+    background-color: var(--bg);
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;

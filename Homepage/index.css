@@ -766,40 +766,18 @@ nav{
 .faq-container{
     height: 90%;
     width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
     gap: 1.5rem;
 }
 .faq-tab{
-    height: 80%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--yellow);
-    padding: 20px 40px;
-    border-radius: 100px;
     font-weight: 500;
-    font-size: 1.15rem;
     color: var(--maroon);
-    @media (max-width: 900px) {
-        font-size: 0.8rem;
-    }
-    @media (max-width: 600px) {
-        padding: 10px 20px;
-        font-size: 0.6rem;
-    }
 }
-.faq-tab:hover{
-    background-color: var(--btn_click);
-}
-.tab-arrow{
-    transform: rotate(90deg);
-    height: 1.5rem;
-}
+
 
 
 /* Footer */

@@ -106,3 +106,5 @@ document.querySelector(".history-right").addEventListener("click", () => {
   showSlide(index + 1);
 });
 showSlide(index);
+
+
