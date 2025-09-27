@@ -753,7 +753,7 @@ nav{
     gap: 2rem;
     background-image: url(/Resource/Others/ticket-bg.png);
     background-position: center;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-size: contain;
     padding-bottom: 5rem;
 }
@@ -765,35 +765,46 @@ nav{
     text-align: center;
 }
 .faq-container{
+    font-size: 0.8rem;
     height: 90%;
     width: 70%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin: auto;
-    column-gap: 3rem;
-    row-gap: 1rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
     @media (max-width: 700px) {
+        row-gap: 0.7rem;
+        font-size: 0.5rem;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 }
 .faq-tab{
     width: 100%;
     font-weight: 500;
-    color: var(--maroon);
     background-color: rgba(132, 237, 21, 0.289);
+    color: var(--maroon);
     /* background-color: rgba(128, 128, 128, 0.289); */
     border-radius: 20px;
+    @media (max-width: 700px) {
+        border-radius: 10px;
+        text-align: center;
+    }
 }
 .faq-q{
-    padding: 20px;
-    font-size: 105%;
+    font-size: 120%;
     padding: 20px 20px 10px 20px;
     font-weight: 700;
+    @media (max-width: 700px) {
+        padding: 10px 10px 5px 10px;
+    }
 }
 .faq-a{
     padding: 0px 20px 20px 20px;
+    @media (max-width: 700px) {
+        padding: 5px 5px 5px 5px;
+    }
 }
 
 
