@@ -27,6 +27,10 @@ a {
     transition: all 0.2s ease-out;
 }
 
+p{
+    margin: 0;
+}
+
 
 .parallax {
     background-image: url("/Resource/Gallery/IMG\ \(17\).JPG");
