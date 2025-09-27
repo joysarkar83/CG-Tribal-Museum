@@ -1,0 +1,386 @@
+body{
+    background-image: url(/Resource/Others/background.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+    padding-top: 350px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--maroon);
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    color: var(--maroon);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Our Museums Section */
+.about-museums-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--maroon);
+    position: relative;
+    z-index: 1;
+}
+
+.museum-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.museum-tab {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #5a3921;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #c0a58e;
+}
+
+.museum-tab:hover {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.museum-tab.active {
+    background-color: #a06b3f;
+    color: #fff;
+    border-color: #a06b3f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.museum-content-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.museum-content {
+    display: none;
+}
+
+.museum-content.active {
+    display: block;
+}
+
+.museum-description {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.museum-stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 10rem;
+    min-width: 15rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+    color: #a06b3f;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5a3921;
+    margin-bottom: 0.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+.stat-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 4rem 1rem;
+}
+
+.highlights-container {
+    background-color: #fff;
+    border-radius: 2rem;
+    max-width: 65rem;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.highlights-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.highlight-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.highlight-icon {
+    color: #a06b3f;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.highlight-text {
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn.primary {
+    background-color: #a06b3f;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background-color: #8a5a33;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #a06b3f;
+    border: 1px solid #a06b3f;
+}
+
+.btn.secondary:hover {
+    background-color: #f9f5f0;
+}
+
+/* Experience Section */
+.experience {
+    padding: 4rem 0;
+}
+
+.experience-container {
+    padding: 2rem 0;
+}
+
+.comparison-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding-bottom: 2rem;
+}
+
+.comparison-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f5d5bb;
+    color: #a06b3f;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.comparison-column {
+    padding: 1rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-cell {
+    padding: 1.5rem 1rem;
+    color: #555;
+    line-height: 1.5;
+    border-bottom: 1px solid #e0d5c8;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.comparison-cell.category {
+    font-weight: 600;
+    color: #a06b3f;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .stats-grid,
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-column,
+    .comparison-cell {
+        font-size: 0.9rem;
+        padding: 1rem 0rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .museum-description p {
+        font-size: 0.9rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .museum-tab {
+        padding: 0.2rem;
+        font-size: 0.9rem;
+    }
+
+    /* the comparison table for mobile */
+    .comparison-header {
+        display: none;
+    }
+
+    .comparison-row {
+        display: block;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #e0d5c8;
+        padding-bottom: 1rem;
+    }
+
+    .comparison-cell {
+        display: block;
+        border-right: none;
+        padding: 0.7rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid #f0e8e0;
+    }
+
+    .comparison-cell:last-child {
+        border-bottom: none;
+    }
+
+    .comparison-cell.category {
+        font-size: 1rem;
+        background-color: #f9f5f0;
+        padding: 0.8rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .comparison-cell:nth-child(2)::before {
+        content: "Tribal: ";
+        font-weight: 600;
+        color: #5a3921;
+    }
+
+    .comparison-cell:nth-child(3)::before {
+        content: "Freedom Fighters: ";
+        font-weight: 600;
+        color: #5a3921;
+    }
+}

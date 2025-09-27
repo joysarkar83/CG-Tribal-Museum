@@ -71,15 +71,26 @@ function animateCounter(el, target, duration = 2000) {
 
   requestAnimationFrame(step);
 }
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      document.querySelectorAll(".impact-card-num").forEach(num => {
-        const target = parseInt(num.dataset.target, 10);
-        animateCounter(num, target, 1000); // 2s duration for all
-      });
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
-observer.observe(document.querySelector(".impact"));
+
+function observeCounters(sectionSelector, counterSelector) {
+  const section = document.querySelector(sectionSelector);
+  if (!section) return;
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        section.querySelectorAll(counterSelector).forEach(num => {
+          const target = parseInt(num.dataset.target, 10);
+          animateCounter(num, target, 2000);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(section);
+}
+
+// Apply to both sections
+observeCounters(".impact", ".impact-card-num");
+observeCounters("#freedom-content", ".stat-number");

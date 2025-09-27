@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="/Homepage/index.css" />
+</head>
+
+<body>
+     <nav>
+        <div class="nav-subcontainer1">
+            <div class="nav-subcontainer1-left">
+                <a href="https://cgstate.gov.in/en" target="_blank"><img class="nav-logo" src="/Resource/Logos/cg_logo.png" alt="Chhattisgarh State Govt. Logo"></a>
+                <a href="https://cgtrti.gov.in/" target="_blank"><img class="nav-logo" src="/Resource/Logos/TRTI CG english logo curve.png" alt="TRTI Logo"></a>
+                <a href="/index.html"><p class="nav-title1">Chhattisgarh Tribal Museum &<br>Freedom Fighter Museum</p></a>
+            </div>
+            
+            <div class="nav-subcontainer1-right">
+                <button class="nav-btn">Hindi</button>
+                <button class="nav-btn">Visit Now</button>
+                <button class="nav-btn">Bookings</button>
+            </div>
+
+            <div class="nav-subcontainer1-right-hamburger">
+                <img src="/Resource/Icons/hamburger_menu.svg" alt="Menu Button">
+
+                <ul class="dropdown">
+                    <li><a href="/About/about.html">About Museum</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Message</a></li>
+                    <li><a href="https://cgtrti.gov.in/index" target="_blank">TRTI</a></li>
+                    <li><a href="https://cgtrti.gov.in/e_Library" target="_blank">E-Library</a></li>
+                    <li><a href="https://cgtrti.gov.in/study" target="_blank">Studies</a></li>
+                    <li><a href="https://cgtrti.gov.in/exhibition" target="_blank">Exhibition</a></li>
+                    <li><a href="#">Tribal Museum Gallery</a></li>
+                    <li><a href="#">Freedom Fighter Museum Gallery</a></li>
+                    <li><a href="/Tribal Gallery/tribal-gallery.html">Tribal Artifacts</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-subcontainer2">
+            <p class="nav-subcontainer2-left nav-title2">Department of Tribal, Scheduled Caste, Backward Classes and Minorities</p>
+            
+            <div class="nav-subcontainer2-right">
+                <div class="nav-subcontainer2-item">
+                    <div class="nav-subcontainer2-tags">About Us</div>
+                    <ul class="dropdown">
+                        <li><a href="/About/about.html">About Museum</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Message</a></li>
+                        <li><a href="https://cgtrti.gov.in/index" target="_blank">TRTI</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-subcontainer2-item">
+                    <div class="nav-subcontainer2-tags">R&D Activities</div>
+                    <ul class="dropdown">
+                        <li><a href="https://cgtrti.gov.in/e_Library" target="_blank">E-Library</a></li>
+                        <li><a href="https://cgtrti.gov.in/study" target="_blank">Studies</a></li>
+                        <li><a href="https://cgtrti.gov.in/exhibition" target="_blank">Exhibition</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-subcontainer2-item">
+                    <div class="nav-subcontainer2-tags">Explore</div>
+                    <ul class="dropdown">
+                        <li><a href="#">Tribal Museum Gallery</a></li>
+                        <li><a href="#">Freedom Fighter Museum Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-subcontainer2-item">
+                    <div class="nav-subcontainer2-tags">Collection</div>
+                    <ul class="dropdown">
+                        <li><a href="/Tribal Gallery/tribal-gallery.html">Tribal Artifacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =============About Museums Section============ -->
+    <section class="about-museums">
+        <div class="container">
+            <h2 class="about-museums-title">About Our Museums</h2>
+            <div class="museum-tabs">
+                <div class="btn museum-tab active" data-tab="tribal">
+                    Tribal Museum
+                </div>
+                <div class="btn museum-tab" data-tab="freedom">
+                    Freedom Fighters Museum
+                </div>
+            </div>
+
+            <div class="museum-content-container">
+                <div class="museum-content active" id="tribal-content">
+                    <div class="museum-description">
+                        <p>
+                            The Tribal Museum showcases the rich cultural heritage and
+                            traditions of indigenous communities of Chhattisgarh.
+                            Through artifacts, artwork, and interactive displays, we
+                            highlight the unique cultural expressions, customs, and
+                            historical struggles of tribal communities.
+                        </p>
+                    </div>
+
+                    <div class="museum-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path>
+                                </svg>
+                            </div>
+
+                            <div class="stat-number">50+</div>
+                            <div class="stat-text">Artifacts & Cultural Items</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="stat-number">7</div>
+                            <div class="stat-text">
+                                Tribal Communities Represented
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="stat-number">150+</div>
+                            <div class="stat-text">Years of Preserved History</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="museum-content" id="freedom-content">
+                    <div class="museum-description">
+                        <span class="dot"></span>
+                        <p>
+                        The Freedom Fighters Museum honors the brave men and women
+                        who fought for India's independence. Through historical
+                        displays, personal artifacts, and compelling narratives,
+                        we tell the story of the struggle against colonial rule
+                        and the birth of independent India.
+                        </p>
+                    </div>
+
+                    <div class="museum-stats">
+                        <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                            </path>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="75" data-plus="true">0</div>
+                        <div class="stat-text">Freedom Fighters Honored</div>
+                        </div>
+
+                        <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z">
+                            </path>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="38">0</div>
+                        <div class="stat-text">Historical Exhibitions</div>
+                        </div>
+
+                        <div class="stat-item">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+                            </path>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-text">Significant Historical Events</div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="highlights">
+        <div class="container highlights-container">
+            <h2 class="section-title">Tribal Highlights</h2>
+            <p class="section-subtitle">
+                Discover the unique aspects of tribal culture through our carefully
+                curated exhibits and collections
+            </p>
+
+            <div class="highlights-box">
+                <div class="highlight-card">
+                    <svg class="highlight-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                        </path>
+                    </svg>
+
+                    <p class="highlight-text">
+                        Immersive dioramas recreating authentic tribal villages with
+                        traditional housing, tools, and daily activities of
+                        Chhattisgarh's indigenous communities.
+                    </p>
+                </div>
+                <div class="highlight-card">
+                    <svg class="highlight-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                        </path>
+                    </svg>
+                    <p class="highlight-text">
+                        Extensive collection of rare tribal musical instruments with
+                        interactive audio stations allowing visitors to experience
+                        traditional sounds and rhythms.
+                    </p>
+                </div>
+                <div class="highlight-card">
+                    <svg class="highlight-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                        </path>
+                    </svg>
+                    <p class="highlight-text">
+                        Detailed exhibits on traditional medicinal practices,
+                        sustainable farming techniques, and ecological knowledge
+                        systems preserved for generations.
+                    </p>
+                </div>
+                <div class="highlight-card">
+                    <svg class="highlight-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                        </path>
+                    </svg>
+                    <p class="highlight-text">
+                        Gallery dedicated to tribal art forms including paintings,
+                        sculptures, pottery, and textiles, showcasing the artistic
+                        traditions of various communities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="#" class="btn primary">Visit Museum</a>
+                <a href="#" class="btn secondary">Explore Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container experience-container">
+            <h2 class="section-title">Our Dual Museum Experience</h2>
+            <p class="section-subtitle">
+                Experience two distinct yet interconnected narratives of Indian
+                history through our complementary museums. Learn how tribal
+                communities and freedom fighters both contributed to India's rich
+                cultural and historical tapestry.
+            </p>
+
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-column">Feature</div>
+                    <div class="comparison-column">Tribal</div>
+                    <div class="comparison-column">Freedom Fighters</div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-cell category">Main Focus</div>
+                    <div class="comparison-cell">
+                        Indigenous cultures, traditions, and lifestyle
+                    </div>
+                    <div class="comparison-cell">
+                        Independence movement, rebellions, and resistance
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-cell category">Time Period</div>
+                    <div class="comparison-cell">
+                        Pre-historic to contemporary tribal life
+                    </div>
+                    <div class="comparison-cell">
+                        1857 to 1947 with emphasis on regional movements
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-cell category">Key Exhibits</div>
+                    <div class="comparison-cell">
+                        Artifacts, tools, handicrafts, art, clothing
+                    </div>
+                    <div class="comparison-cell">
+                        Historical documents, photographs, weapons, personal items
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-cell category">Visitor Experience</div>
+                    <div class="comparison-cell">
+                        Immersive cultural displays with audio-visual components
+                    </div>
+                    <div class="comparison-cell">
+                        Chronological journey through the independence struggle
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============Footer Section============ -->
+<footer>
+    <div class="footer">
+            <div class="footer-smlinks footer-element">
+                <p class="footer-title">Social Media Links:</p>
+                <a href="https://facebook.com/" target="_blank"><img class="footer-icon" src="/Resource/Icons/facebook.svg" alt="Facebook Icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="/Resource/Icons/x.svg" alt="X Icon"></a>
+                <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="/Resource/Icons/instagram.svg" alt="Instagram Icon"></a>
+                <a href="https://youtube.com/" target="_blank"><img class="footer-icon" src="/Resource/Icons/youtube.svg" alt="YouTube Icon"></a>
+            </div>
+            
+            <div class="footer-timings footer-element">
+                <p class="footer-title">Opening Hours:</p>
+                <p class="footer-text">Tuesday-Sunday: 10:30 AM - 5 PM</p>
+                <p class="footer-text">Closed on Monday and National Holidays</p>
+                <br><br>
+                <p class="footer-title">Contact:</p>
+                <a class="footer-text" href="mailto:triraipur0771@gmail.com" target="_blank"><p class="footer-text">Mail Us</p></a>
+                <p class="footer-text">0771-2960530</p>
+            </div>
+            
+            <div class="footer-location footer-element">
+                <p class="footer-title footer-title-location">Location Map:</p>
+                <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.7634658522675!2d81.75928696990009!3d21.12901032778747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c5001609da89%3A0x2907ae361d533fef!2sTribal%20Freedom%20Fighter%20Museum%2C%20Naya%20Raipur!5e1!3m2!1sen!2sin!4v1757140682743!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="footer-tags footer-element">
+                <a class="footer-title">Useful Links:</a>
+                <a class="footer-text" href="/About/about.html">About Us</a>
+                <a class="footer-text">Nearby Places</a>
+                <a class="footer-text">Support Us</a>
+                <a class="footer-text">Important Sites</a>
+                <a class="footer-text">Orders/Tenders</a>
+                <a class="footer-text">News/Media</a>
+            </div>
+            
+            <div class="footer-visitus footer-element">
+                <p class="footer-title">Visit Us:</p>
+                <p class="footer-text">Sector 24,</p>
+                <p class="footer-text">Near Purkhouti Muktangan,</p>
+                <p class="footer-text">Chhattisgarh 492101</p>
+            </div>
+            
+            <div class="footer-copyright footer-text">&copy; 2025 Chhattisgarh Tribal Museum and Freedom Fighter Museum. All rights reserved by IIIT Naya Raipur.</div>
+        </div>
+    </footer>
+    <script src="about.js" defer></script>
+</body>
+
+</html>
