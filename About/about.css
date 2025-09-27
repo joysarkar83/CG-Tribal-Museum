@@ -70,9 +70,11 @@ h6 {
     gap: 1rem;
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
 }
 
 .museum-tab {
+    padding:  10px 20px;
     background-color: rgba(255, 255, 255, 0.7);
     color: #5a3921;
     cursor: pointer;
@@ -312,7 +314,8 @@ h6 {
 @media (max-width: 480px) {
     .container {
         width: 95%;
-        padding: 0 10px;
+        padding-top: 100px;
+
     }
 
     .section-title {
@@ -337,7 +340,7 @@ h6 {
     }
 
     .museum-tab {
-        padding: 0.2rem;
+        padding:  10px 20px;
         font-size: 0.9rem;
     }
 
@@ -369,7 +372,7 @@ h6 {
         font-size: 1rem;
         background-color: #f9f5f0;
         padding: 0.8rem 1rem;
-        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .comparison-cell:nth-child(2)::before {
