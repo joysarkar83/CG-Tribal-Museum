@@ -274,13 +274,14 @@ nav{
 
 /* BANNER SECTION */
 .banner{
-    aspect-ratio: 1680/989;
+    /* aspect-ratio: 1680/989; */
     width: 100%;
+    height: 100vh;
     background-image: url(/Resource/Others/banner_with_stripes.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }

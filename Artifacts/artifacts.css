@@ -1,17 +1,10 @@
+@import url('/Homepage/index.css');
+
 * {
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     transition: all 0.2s ease-out;
-}
-
-:root {
-    --maroon: #550000;
-    --text: #ffffff;
-    --bg: #e9d9b8bf;
-    --yellow: #FFD700;
-    --dull: #f4f4f4;
-    --btn_click: #d0b104;
 }
 
 body {
@@ -39,12 +32,6 @@ p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.parallax-title {
-    position: relative;
-    top: 35vh;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .parallax-title p {
@@ -131,23 +118,4 @@ p{
 
 .carousel-control-next {
     right: -12.5vh;
-}
-
-
-
-
-/* Footer */
-.footer-sm-adjust {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.footer-sm-adjust a {
-    display: inline-block;
-}
-
-.footer-visitus p,
-.footer-timings p {
-    line-height: 8px;
 }

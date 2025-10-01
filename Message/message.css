@@ -1,0 +1,130 @@
+@import url('/Homepage/index.css');
+
+
+body{
+    background-image: url('/Resource/Others/background.png');
+    background-size: contain;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.message-full, .show-less-btn{
+    display: none;
+}
+
+.ministers-messages-container{
+    padding-top: 35vh;
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    gap: 2rem;
+
+    @media (max-width: 1200px) {
+        width: 80vw;
+        padding-top: 30vh;
+    }
+    @media (max-width: 1000px) {
+        width: 90vw;
+        padding-top: 30vh;
+    }
+}
+
+.ministers-messages-container h1{
+    font-weight: 700;
+    color: var(--maroon);
+    text-align: center;
+    margin-bottom: 2rem;
+    @media (max-width: 1000px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 500px) {
+        font-size: 1.1rem;
+    }
+}
+
+.message-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.message-card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.244);
+    border-radius: 20px;
+}
+.message-card h2{
+    @media (max-width: 1000px) {
+        font-size: 1.2rem;
+    }
+    @media (max-width: 400px) {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+.message-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem;
+    @media (max-width: 600px) {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    @media (max-width: 600px) {
+        margin: 1rem;
+    }
+    @media (max-width: 400px) {
+        margin: 0.6rem;
+    }
+}
+.minister-image{
+    height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    @media (max-width: 700px) {
+        height: 120px;
+    }
+}
+.minister-name{
+    font-weight: 700;
+    margin-top: 1rem;
+    font-style: italic;
+    margin: 20px;
+    text-align: right;
+    @media (max-width: 400px) {
+        font-size: 0.6rem;
+    }
+}
+.message-preview, .message-full{
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    @media (max-width: 700px) {
+        text-align: left;
+        font-size: 0.7rem;
+    }
+}
+.message-footer button{
+    background-color: var(--maroon);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer{
+    margin-top: 3rem;
+}
