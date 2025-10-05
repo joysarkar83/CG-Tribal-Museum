@@ -64,11 +64,14 @@ body{
     border-radius: 20px;
 }
 .message-card h2{
+    background-color: rgba(174, 255, 0, 0.088);
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: var(--primary) -6px 0px 0px 0px;
+    padding: 10px;
     @media (max-width: 1000px) {
         font-size: 1.2rem;
     }
     @media (max-width: 400px) {
-        text-align: center;
         font-size: 0.8rem;
     }
 }

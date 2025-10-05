@@ -43,7 +43,10 @@ main{
 .section-header{
     color: var(--primary);
     padding-left: 5px;
+    width: 100%;
     box-shadow: var(--primary) -6px 0px 0px 0px;
+    background-color: rgba(174, 255, 0, 0.088);
+    border-radius: 0px 10px 10px 0px;
     @media (max-width: 700px) {
         font-size: 1.2rem;       
     }
@@ -65,11 +68,9 @@ main{
     font-size: 1.1rem;
     line-height: 1.2;
     font-weight: 400;
-    background-color: rgba(174, 255, 0, 0.088);
     font-style: italic;
-    border-radius: 0px 10px 10px 0px;
     padding: 15px;
-    box-shadow: var(--primary) -4px 0px 0px 0px;
+    box-shadow: white -4px 0px 0px 0px;
     @media (max-width: 700px) {
         font-size: 0.9rem;       
     }
