@@ -322,9 +322,18 @@ nav {
 
 
 /* BANNER SECTION */
+.strip2 {
+    height: 2rem;
+    width: 100vw;
+    background-image: url(/Resource/Others/strip2.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    overflow-x: hidden;
+}
 .banner {
     /* aspect-ratio: 1680/989; */
-    width: 100%;
+    max-width: 100vw;
     height: 100vh;
     background-image: url(/Resource/Others/banner_with_stripes.png);
     background-attachment: fixed;
@@ -912,7 +921,7 @@ nav {
 .faq-tab {
     width: 100%;
     font-weight: 500;
-    background-color: rgba(132, 237, 21, 0.289);
+    background-color: rgba(141, 219, 24, 0.547);
     color: var(--maroon);
     /* background-color: rgba(128, 128, 128, 0.289); */
     border-radius: 20px;
