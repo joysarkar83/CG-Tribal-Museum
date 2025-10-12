@@ -2,11 +2,11 @@
 
 :root{
     --primary: #82c14E;
-    --background: rgba(0, 0, 0, 0.523);
+    --background: rgba(0, 0, 0, 0.641);
 }
 
 body{
-    background-image: url('/Resource/Others/background.png');
+    background-image: url('/Resource/Others/background-yellowish.png');
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
@@ -38,40 +38,43 @@ main{
     gap: 1rem;
     justify-content: center;
     align-items: start;
+    box-sizing: border-box;
 }
 
 .section-header{
     color: var(--primary);
-    padding-left: 5px;
+    padding-left: 10px;
     width: 100%;
     box-shadow: var(--primary) -6px 0px 0px 0px;
     background-color: rgba(174, 255, 0, 0.088);
     border-radius: 0px 10px 10px 0px;
     @media (max-width: 700px) {
-        font-size: 1.2rem;       
+        font-size: 1.2rem;
     }
 }
 
 .main-vision{
     font-size: 1.1rem;
-    line-height: 1.2;
-    font-weight: 400;
+    line-height: 1.7rem;
+    font-weight: 450;
     @media (max-width: 700px) {
         font-size: 0.9rem;       
     }
     @media (max-width: 575px) {
+        line-height: 1.4rem;
         font-size: 0.7rem;       
     }
 }
 
 .mission-quote{
+    line-height: 1.7rem;
     font-size: 1.1rem;
-    line-height: 1.2;
-    font-weight: 400;
+    font-weight: 450;
     font-style: italic;
     padding: 15px;
     box-shadow: white -4px 0px 0px 0px;
     @media (max-width: 700px) {
+        line-height: 1.4rem;
         font-size: 0.9rem;       
     }
     @media (max-width: 575px) {
@@ -80,11 +83,14 @@ main{
 }
 
 .common-points{
+    line-height: 1.7rem;
+    font-weight: 450;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px 20px;
     @media (max-width: 600px) {
+        line-height: 1.4rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 10px 10px;

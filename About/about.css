@@ -5,7 +5,8 @@
 }
 
 body{
-    background-image: url(/Resource/Others/background.png);
+    /* background-image: url(/Resource/Others/background.png); */
+    background-image: url(/Resource/Others/background-yellowish.png);
     background-position: center;
     background-size: contain;
     background-repeat: repeat;
@@ -52,24 +53,34 @@ h6 {
     color: var(--maroon);
 }
 
-.section-subtitle {
+.section-subtitle{
+    padding: 1.5rem 2rem;
     text-align: center;
-    font-size: 1rem;
     color: #666;
-    margin-bottom: 3rem;
     max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.comparison-subtitle{
+    max-width: 80%;
 }
 
 /* About Our Museums Section */
 .about-museums-title {
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-align: center;
     margin-bottom: 2rem;
     color: var(--maroon);
     position: relative;
     z-index: 1;
+    @media (max-width: 650px) {
+        font-size: 2.5rem;
+    }
 }
 
 .museum-tabs {
@@ -117,7 +128,7 @@ h6 {
     display: block;
 }
 
-.museum-description {
+.museum-description{
     padding-left: 1.5rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -247,7 +258,14 @@ h6 {
 }
 
 .experience-container {
-    padding: 2rem 0;
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+    color: #666;
+    max-width: 90%;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    border-radius: 10px;
 }
 
 .comparison-table {
@@ -257,7 +275,7 @@ h6 {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
     padding-bottom: 2rem;
 }
 
@@ -339,7 +357,8 @@ h6 {
     }
 
     .section-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
     }
 
     .stat-number {

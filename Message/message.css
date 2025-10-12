@@ -2,11 +2,11 @@
 
 :root{
     --primary: #82c14E;
-    --background: rgba(0, 0, 0, 0.523);
+    --background: rgba(0, 0, 0, 0.641);
 }
 
 body{
-    background-image: url('/Resource/Others/background.png');
+    background-image: url('/Resource/Others/background-yellowish.png');
     background-size: contain;
     background-repeat: repeat;
     height: 100%;
