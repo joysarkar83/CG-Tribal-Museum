@@ -7,10 +7,10 @@
 
 body{
     background-image: url('/Resource/Others/background-yellowish.png');
-    background-size: contain;
+    background-position: center;
     background-repeat: repeat;
-    height: 100%;
-    width: 100%;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 .message-full, .show-less-btn{
