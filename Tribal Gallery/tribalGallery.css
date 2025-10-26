@@ -1,146 +1,232 @@
-@import url('/Homepage/index.css');
+@import url("/Homepage/index.css");
 
+.parallax {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(/Resource/SlideShow1/3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 
-.parallax{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(/Resource/SlideShow1/3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
-.parallax h1{
-    font-size: 40px;
-    padding-bottom: 3rem;
-}
-
-body{
-    background-image: url('/Resource/Others/background-yellowish.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.parallax h1 {
+	font-size: 40px;
+	padding-bottom: 3rem;
+	@media (max-width: 1000px) {
+		font-size: 2rem;
+	}
+	@media (max-width: 600px) {
+		font-size: 1.5rem;
+		padding-bottom: 2rem;
+	}
 }
 
-#page-desc{
-    background-color: white;
-    width: 70%;
-    margin: 3rem auto;
-    color: var(--maroon);
-    text-align: center;
-    padding: 1.5rem;
-    border-radius: 10px;
-    font-size: 1.1rem;
+body {
+	background-image: url("/Resource/Others/background-yellowish.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
-.main{
-    width: 90%;
-    margin: auto;
-    display: flex;
+#page-desc {
+	line-height: 1.5rem;
+	background-color: white;
+	width: 70%;
+	margin: 3rem auto;
+	color: var(--maroon);
+	text-align: center;
+	padding: 1.5rem;
+	border-radius: 10px;
+	font-size: 1.1rem;
+	@media (max-width: 1200px) {
+		width: 85%;
+	}
+	@media (max-width: 800px) {
+		font-size: 0.9rem;
+		margin: 1.5rem auto;
+	}
+	@media (max-width: 600px) {
+		padding: 1rem;
+	}
+}
+
+.main {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 50px;
+}
+
+.card {
+	height: 400px;
+	width: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 1rem;
+	border-radius: 20px;
+	@media (max-width: 1200px) {
+		height: 350px;
+		width: 250px;
+	}
+	@media (max-width: 660px) {
+		width: 90%;
+		height: 20rem;
+	}
+}
+
+.card:nth-of-type(1) {
+	background-image: url("/Resource/Tribal\ Gallery/Tribal\ Introduction/1.jpg");
+}
+.card:nth-of-type(2) {
+	background-image: url("/Resource/Tribal\ Gallery/Life\ Cycle/1.jpg");
+}
+.card:nth-of-type(3) {
+	background-image: url("/Resource/Tribal\ Gallery/Housing\ and\ Domestic\ Tools/1.jpg");
+}
+.card:nth-of-type(4) {
+	background-image: url("/Resource/Tribal\ Gallery/");
+}
+.card:nth-of-type(5) {
+	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+}
+.card:nth-of-type(6) {
+	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+}
+.card:nth-of-type(7) {
+	background-image: url("/Resource/Tribal\ Gallery/Tribal\ Dance/1.jpg");
+}
+.card:nth-of-type(8) {
+	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+}
+.card:nth-of-type(9) {
+	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+}
+.card:nth-of-type(10) {
+	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+}
+.card:nth-of-type(11) {
+	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+}
+.card:nth-of-type(12) {
+	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+}
+.card:nth-of-type(13) {
+	background-image: url("/Resource/Tribal\ Gallery/Arts\ and\ Crafts/1.jpg");
+}
+.card:nth-of-type(14) {
+	background-image: url("/Resource/Tribal\ Gallery/Particularly\ Vulnerable\ Tribal\ Groups/1.jpg");
+}
+
+.card-title {
+	font-family: "Merriweather";
+	font-weight: 800;
+	font-size: 1.2rem;
+	color: #fcdab1;
+	width: 100%;
+	height: 30%;
+	border-radius: 20px 20px 0px 0px;
+	box-sizing: border-box;
+	padding-top: 1rem;
+	letter-spacing: 1px;
+	background: linear-gradient(
+		180deg,
+		rgba(85, 0, 0, 1) 0%,
+		rgba(85, 0, 0, 1) 0%,
+		rgba(83, 6, 10, 1) 20%,
+		rgba(83, 6, 10, 0) 100%
+	);
+	text-align: center;
+	@media (max-width: 1000px) {
+		font-size: 1.1rem;
+	}
+	@media (max-width: 500px) {
+		font-size: 1rem;
+	}
+	@media (max-width: 400px) {
+		font-size: 0.9rem;
+	}
+}
+
+.card-explore {
+	padding: 10px 20px;
+	border-radius: 40px;
+	background-color: rgba(0, 0, 0, 0.411);
+	color: white;
+	font-weight: 700;
+	font-size: 1rem;
+	box-sizing: border-box;
+	border: none;
+	@media (max-width: 1000px) {
+		font-size: 0.9rem;
+	}
+}
+
+.card-explore:hover {
+	transform: translateX(-1px) translateY(-1px);
+	color: var(--maroon);
+	background-color: #fcdab1;
+}
+
+/* ===================== MODAL CONTROLS ===================== */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
     justify-content: center;
     align-items: center;
-}
-
-.card{
-    height: 400px;
-    width: 300px;
-    background-image: url('/Resource/Others/placeholder.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 9999;
     padding: 1rem;
-    border-radius: 20px;
-}
-
-.card-title{
-    font-weight: 800;
-    font-size: 20px;
-    color: maroon;
-    text-align: center;
-}
-
-.card-explore{
-    padding: 10px 20px;
-    border-radius: 40px;
-    background-color: rgba(0, 0, 0, 0.586);
-    color: white;
-    font-weight: 600;
-    font-size: 15px;
+    overflow: hidden;
     box-sizing: border-box;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.modal-controls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    z-index: 10000;
+}
+
+.modal-controls button {
+    background: #e63946;
     border: none;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-sizing: border-box;
+    @media (max-width: 500px) {
+      font-size: 0.6rem;
+    }
 }
-
-.card-explore:hover{
-    transform: translateX(-1px) translateY(-1px);
-    background-color: var(--maroon);
-}
-
-
-
-
-
-
-/* ===== MODAL ===== */
-    .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.9);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      z-index: 1000;
-      padding: 1rem;
-    }
-
-    .modal.active {
-      display: flex;
-    }
-
-    .modal img {
-      max-width: 90%;
-      max-height: 70vh;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-      object-fit: contain;
-    }
-
-    .modal-controls {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .modal-controls button {
-      background: #e63946;
-      border: none;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .modal-controls button:hover {
-      background: #ff5252;
-    }
-
-    @media (max-width: 600px) {
-      .card {
-        height: 200px;
-      }
-
-      .card-title {
-        font-size: 1.1rem;
-      }
-    }
+.modal-controls button:hover { background: #ff5252; }

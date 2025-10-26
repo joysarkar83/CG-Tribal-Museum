@@ -1,25 +1,83 @@
-const cards = document.querySelectorAll(".card");
+const folders = {
+	"Tribal Introduction": 2,
+	"Life Cycle": 1,
+	"Housing and Domestic Tools": 1,
+	"Hunting Tools and Equipment": 1,
+	"Traditional Clothing and Ornaments": 1,
+	"Agricultural Implements": 1,
+	"Tribal Dance": 1,
+	"Tribal Musical Instruments": 1,
+	"Religious Beliefs": 1,
+	"Tribal Festivals": 1,
+	"Traditional Technologies": 1,
+	"Cultural Heritage": 1,
+	"Arts and Crafts": 1,
+	"Particularly Vulnerable Tribal Groups": 1 
+};
+// ====== MODAL ELEMENTS ======
 const modal = document.getElementById("imageModal");
-const modalImage = document.getElementById("modalImage");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
+const modalImg = document.getElementById("modalImage");
 const closeBtn = document.getElementById("closeBtn");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
 
-let currentImages = [];
-let currentIndex = 0;
+let currentFolder = "";
+let currentIndex = 1;
 
-// Open modal with card's images
-cards.forEach((card) => {
-	const btn = card.querySelector(".card-explore");
-	btn.addEventListener("click", () => {
-		currentImages = JSON.parse(card.dataset.images);
-		currentIndex = 0;
-		modalImage.src = currentImages[currentIndex];
-		modal.classList.add("active");
-	});
+// ====== OPEN MODAL ======
+document.querySelectorAll(".card-explore").forEach(btn => {
+    btn.addEventListener("click", () => {
+        currentFolder = btn.dataset.folder;
+        currentIndex = 1;
+        showImage();
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden"; // prevent scroll
+    });
 });
 
-// Navigation
+// ====== SHOW IMAGE ======
+function showImage() {
+    const path = `/Resource/Tribal Gallery/${currentFolder}/${currentIndex}.jpg`;
+    modalImg.src = path;
+}
+
+// ====== NEXT / PREV BUTTONS ======
+nextBtn.addEventListener("click", () => {
+    currentIndex = currentIndex < folders[currentFolder] ? currentIndex + 1 : 1;
+    showImage();
+});
+
+prevBtn.addEventListener("click", () => {
+    currentIndex = currentIndex > 1 ? currentIndex - 1 : folders[currentFolder];
+    showImage();
+});
+
+// ====== CLOSE MODAL ======
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // restore scroll
+    document.body.style.overflowX = "hidden"; // restore scroll
+});
+
+// Close by clicking outside the image
+modal.addEventListener("click", e => {
+    if(e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+        document.body.style.overflowX= "hidden";
+    }
+});
+
+// Keyboard navigation
+document.addEventListener("keydown", e => {
+    if(modal.style.display !== "flex") return;
+    if(e.key === "ArrowRight") nextBtn.click();
+    if(e.key === "ArrowLeft") prevBtn.click();
+    if(e.key === "Escape") closeBtn.click();
+});
+
+
+// --------------------------Navigation----------------------
 nextBtn.addEventListener("click", () => {
 	currentIndex = (currentIndex + 1) % currentImages.length;
 	modalImage.src = currentImages[currentIndex];
@@ -39,7 +97,6 @@ closeBtn.addEventListener("click", () => {
 modal.addEventListener("click", (e) => {
 	if (e.target === modal) modal.classList.remove("active");
 });
-
 
 // Hide Hamburger
 const hamburgerBtn = document.querySelector(
@@ -71,4 +128,3 @@ document.addEventListener("keydown", (e) => {
 		hamburgerMenu.classList.remove("active");
 	}
 });
-
