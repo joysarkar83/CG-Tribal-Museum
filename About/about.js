@@ -93,6 +93,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Explore button dynamic redirect
+const exploreBtn = document.querySelector(".explore-btn");
+
+if (exploreBtn) {
+  exploreBtn.addEventListener("click", function (e) {
+    e.preventDefault(); // prevent default link action
+
+    const activeTab = document.querySelector(".museum-tab.active");
+    if (!activeTab) return;
+
+    const tabId = activeTab.dataset.tab;
+
+    let targetLink = "#"; // default fallback
+    if (tabId === "tribal") {
+      targetLink = "/Tribal Gallery/tribalGallery.html";
+    } else if (tabId === "freedom") {
+      targetLink = "/Freedom Fighter Gallery/freedomFighterGallery.html";
+    }
+
+    window.location.href = targetLink;
+  });
+}
 
 
 
