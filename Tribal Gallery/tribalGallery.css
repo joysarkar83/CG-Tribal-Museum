@@ -88,48 +88,50 @@ body {
 	}
 }
 
+
 .card:nth-of-type(1) {
-	background-image: url("/Resource/Tribal\ Gallery/Tribal\ Introduction/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Tribal\ Introduction/1.jpg");
 }
 .card:nth-of-type(2) {
-	background-image: url("/Resource/Tribal\ Gallery/Life\ Cycle/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Life\ Cycle/1.jpg");
 }
 .card:nth-of-type(3) {
-	background-image: url("/Resource/Tribal\ Gallery/Housing\ and\ Domestic\ Tools/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Housing\ and\ Domestic\ Tools/1.jpg");
 }
 .card:nth-of-type(4) {
-	background-image: url("/Resource/Tribal\ Gallery/");
+    background-image: url("/Resource/Tribal\ Gallery/Hunting\ Tools\ and\ Equipment/1.jpg");
 }
 .card:nth-of-type(5) {
-	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Traditional\ Clothing\ and\ Ornaments/1.jpg");
 }
 .card:nth-of-type(6) {
-	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Agricultural\ Implements/1.jpg");
 }
 .card:nth-of-type(7) {
-	background-image: url("/Resource/Tribal\ Gallery/Tribal\ Dance/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Tribal\ Dance/1.jpg");
 }
 .card:nth-of-type(8) {
-	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Tribal\ Musical\ Instruments/1.jpg");
 }
 .card:nth-of-type(9) {
-	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Religious\ Beliefs/1.jpg");
 }
 .card:nth-of-type(10) {
-	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Tribal\ Festivals/1.jpg");
 }
 .card:nth-of-type(11) {
-	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Traditional\ Technologies/1.jpg");
 }
 .card:nth-of-type(12) {
-	background-image: url("/Resource/Tribal\ Gallery/--------/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Cultural Heritage/1.jpg");
 }
 .card:nth-of-type(13) {
-	background-image: url("/Resource/Tribal\ Gallery/Arts\ and\ Crafts/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Arts\ and\ Crafts/1.jpg");
 }
 .card:nth-of-type(14) {
-	background-image: url("/Resource/Tribal\ Gallery/Particularly\ Vulnerable\ Tribal\ Groups/1.jpg");
+    background-image: url("/Resource/Tribal\ Gallery/Particularly\ Vulnerable\ Tribal\ Groups/1.jpg");
 }
+
 
 .card-title {
 	font-family: "Merriweather";
@@ -193,7 +195,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgba(0,0,0,0.9);
-    z-index: 9999;
+    z-index: 10;
     padding: 1rem;
     overflow: hidden;
     box-sizing: border-box;
@@ -212,7 +214,9 @@ body {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
-    z-index: 10000;
+    z-index: 10;
+	position: fixed;
+	bottom: 2rem;
 }
 
 .modal-controls button {
