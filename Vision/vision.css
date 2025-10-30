@@ -1,4 +1,16 @@
 @import url('/Homepage/index.css');
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Resource/Fonts/Montserrat.ttf);
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(/Resource/Fonts/Oswald.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(/Resource/Fonts/Merriweather.ttf);
+}
 
 :root{
     --primary: #82c14E;

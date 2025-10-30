@@ -4,6 +4,18 @@
     font-family: "Montserrat", sans-serif;
     transition: all 0.2s ease-out;
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Resource/Fonts/Montserrat.ttf);
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(/Resource/Fonts/Oswald.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(/Resource/Fonts/Merriweather.ttf);
+}
 
 :root {
     --maroon: #550000;
@@ -112,9 +124,10 @@ nav {
     background-color: var(--yellow);
     color: var(--maroon);
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 30px;
     border-style: none;
+    box-sizing: border-box;
 
     @media (max-width: 950px) {
         padding: 5px 10px;
