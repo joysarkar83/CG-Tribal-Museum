@@ -112,7 +112,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
     padding-right: 3rem;
 
     @media (max-width: 640px) {
@@ -123,7 +123,7 @@ nav {
 .nav-btn {
     background-color: var(--yellow);
     color: var(--maroon);
-    font-weight: 600;
+    font-weight: 500;
     padding: 8px 16px;
     border-radius: 30px;
     border-style: none;
@@ -272,7 +272,7 @@ nav {
     max-width: 10rem;
     margin: 0;
     padding: 0;
-    background-color: #55000094;
+    background-color: #480101c7;
     border-radius: 0.75rem;
     z-index: 15;
     display: none;

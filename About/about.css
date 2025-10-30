@@ -140,18 +140,18 @@ h6 {
 }
 
 .museum-description{
-    padding-left: 1.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    max-width: 90%;
+    width: 90%;
     margin: 0 auto;
-    padding: 2rem;
     background-color: #fff;
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
+    box-sizing: border-box;
 }
 
 .museum-stats {
@@ -242,6 +242,7 @@ h6 {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .btn.primary {
@@ -384,45 +385,87 @@ h6 {
     .museum-tab {
         padding:  10px 20px;
         font-size: 0.9rem;
+    }    
+}
+
+@media (max-width: 600px) {
+    .top-container {
+        padding-top: 150px;
     }
 
+    .stat-item {
+        padding: 0.8rem;
+        height: 8rem;
+        width: 10rem;
+    }
+    .museum-content-container {
+        margin-top: 2rem;
+        padding: 0rem 0rem;
+    }
+    .highlights-container{
+        border-radius: 10px;
+    }
+    .museum-description{
+        width: 95%;
+    }
+    .section-subtitle{
+        padding: 0;
+    }
+    .highlight-text{
+        font-size: 0.9rem;
+    }
+    .btn{
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .buttons{
+        margin-bottom: 1rem;
+        gap: 0.9rem;
+    }
+    .highlights {
+        padding: 2rem 1rem;
+    }
+    .experience {
+        padding: 0 0 2rem 0;
+    }
     /* the comparison table for mobile */
     .comparison-header {
         display: none;
     }
-
+    
     .comparison-row {
         display: block;
         margin-bottom: 1.5rem;
         border-bottom: 2px solid #e0d5c8;
         padding-bottom: 1rem;
     }
-
+    
     .comparison-cell {
+        font-size: 0.8rem;
         display: block;
         border-right: none;
         padding: 0.7rem 1rem;
         text-align: left;
         border-bottom: 1px solid #f0e8e0;
     }
-
+    
     .comparison-cell:last-child {
         border-bottom: none;
     }
-
+    
     .comparison-cell.category {
-        font-size: 1rem;
+        font-size: 0.9rem;
         background-color: #f9f5f0;
         padding: 0.8rem 1rem;
         margin-top: 0.5rem;
     }
-
+    
     .comparison-cell:nth-child(2)::before {
         content: "Tribal: ";
         font-weight: 600;
         color: #5a3921;
     }
-
+    
     .comparison-cell:nth-child(3)::before {
         content: "Freedom Fighters: ";
         font-weight: 600;

@@ -136,13 +136,17 @@ body {
   gap: 20px;
 }
 .btn{
-  font-size: 17px;
+  font-size: 1rem;
   box-sizing: border-box;
   font-family: "Montserrat";
   font-weight: 500;
   padding: 15px 30px;
   background-color: var(--maroon);
   border-radius: 100px;
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
 }
 .btn:hover{
   transform: translateY(-3px);
@@ -152,7 +156,7 @@ body {
 
 
 .cards {
-  margin: 5rem auto;
+  margin: 3rem auto;
   width: 85vw;
   display: flex;
   gap: 2rem;

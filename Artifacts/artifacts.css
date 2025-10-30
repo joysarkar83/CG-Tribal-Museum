@@ -44,11 +44,38 @@ p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
 }
 
+.parallax-title{
+    position: relative;
+    top: 30%;
+}
 .parallax-title p {
-    font-size: 2rem;
-    margin-top: -0.25rem;
+    font-size: 1.5rem;
+    @media (max-width: 850px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 580px) {
+        font-size: 0.9rem;
+    }
+    @media (max-width: 400px) {
+        font-size: 0.7rem;
+    }
+}
+.parallax-title h1 {
+    font-size: 3rem;
+    @media (max-width: 850px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 580px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 400px) {
+        font-size: 1rem;
+    }
 }
 
 
