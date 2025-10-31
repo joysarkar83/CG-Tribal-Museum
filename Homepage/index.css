@@ -398,7 +398,8 @@ nav {
     box-sizing: border-box;
 
     @media (max-width: 1050px) {
-        left: 20%
+        left: 20%;
+        top: 80%;
     }
 
     @media (max-width: 680px) {
@@ -414,17 +415,16 @@ nav {
     }
 
     @media (max-width: 450px) {
-        top: 60%;
         left: 0%
     }
 }
 
 .banner-link:hover {
-    transform: scale(1.01) translateX(0.2rem);
+    transform: translateX(0.2rem);
 }
 
 .banner-link2:hover {
-    transform: scale(1.01) translateX(-0.2rem);
+    transform: translateX(-0.2rem);
 }
 
 
@@ -494,10 +494,12 @@ nav {
     align-items: center;
     text-align: center;
     gap: 2.5rem;
+    padding-bottom: 3rem;
     flex-wrap: wrap;
-
+    
     @media (max-width: 875px) {
         gap: 0.5rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -516,7 +518,7 @@ nav {
     @media (max-width: 875px) {
         gap: 0.5rem;
         padding: 0.8rem;
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -626,7 +628,7 @@ nav {
 
 /* STRIP */
 .strip {
-    height: 3rem;
+    height: 0.8rem;
     width: 100vw;
     background-image: url(/Resource/Others/strip.png);
     background-position: center;
