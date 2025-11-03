@@ -628,7 +628,7 @@ nav {
 
 /* STRIP */
 .strip {
-    height: 0.8rem;
+    height: 3.5vw;
     width: 100vw;
     background-image: url(/Resource/Others/strip.png);
     background-position: center;
