@@ -17,6 +17,20 @@ setInterval(() => {
 
 
 
+
+
+// Auto Translate
+document.querySelector('#translate-btn').addEventListener("click", () => {
+  const url = encodeURIComponent(window.location.href);
+  const lang = "hi"; // target language code
+
+  window.location.href =
+    `https://translate.google.com/translate?hl=${lang}&sl=auto&tl=${lang}&u=${url}`;
+});
+
+
+
+
 // Hide Hamburger
 const hamburgerBtn = document.querySelector(".nav-subcontainer1-right-hamburger img");
 const hamburgerMenu = document.querySelector(".nav-subcontainer1-right-hamburger .dropdown");

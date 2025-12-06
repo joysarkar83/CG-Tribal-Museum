@@ -82,22 +82,26 @@ nav {
 }
 
 .nav-logo {
-    height: 4.5rem;
-
+    height: 3.5rem;
+    
     @media (max-width: 900px) {
         height: 2.5rem;
     }
-
+    
     @media (max-width: 430px) {
         height: 2rem;
     }
 }
+.nav-logo-1 {
+    height: 4rem;
+    margin-right: 1.5rem;
+}
 
 .nav-title1 {
-    text-align: center;
+    text-align: left;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
     @media (max-width: 900px) {
         font-size: 1rem;
@@ -121,6 +125,7 @@ nav {
 }
 
 .nav-btn {
+    cursor: pointer;
     background-color: var(--yellow);
     color: var(--maroon);
     font-weight: 500;
@@ -241,7 +246,7 @@ nav {
 }
 
 .nav-title1:hover {
-    transform: scale(1.02);
+    transform: scale(1.009);
 }
 
 .nav-subcontainer2-item {
@@ -604,7 +609,6 @@ nav {
 
 .ticket-image {
     width: 80%;
-    aspect-ratio: 10/3;
     margin: auto;
     padding-bottom: 8rem;
     filter: drop-shadow(0 0 0.5rem var(--maroon));
@@ -618,7 +622,6 @@ nav {
 }
 
 .ticket-image-half {
-    aspect-ratio: 25/9;
     padding-bottom: 3rem;
 
     @media (min-width: 500px) {
