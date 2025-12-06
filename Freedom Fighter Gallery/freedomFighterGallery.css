@@ -41,10 +41,8 @@ body{
 .main{
     width: 80%;
     margin: auto;
+    font-weight: 500;
 }
-
-
-
 
 .container{
     width: 80%;
@@ -70,9 +68,16 @@ body{
     text-align: center;   
 }
 
+.container-text{
+    align-self: start;
+}
+
 .container-title{
     margin-bottom: 1rem;
-    text-decoration: underline;
+    padding: 5px 0px 5px 1rem;
+    box-shadow: -5px 0px 0px 0px black;
+    background-color: rgba(0, 128, 0, 0.216);
+    border-radius: 0px 5px 5px 0px;
 }
 .container-desc{
     font-size: 1.1rem;
