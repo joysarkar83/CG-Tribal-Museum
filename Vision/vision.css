@@ -74,7 +74,7 @@ main{
         font-size: 0.9rem;       
     }
     @media (max-width: 575px) {
-        line-height: 1.4rem;
+        line-height: 1.2rem;
         font-size: 0.7rem;       
     }
 }
@@ -87,7 +87,7 @@ main{
     padding: 15px;
     box-shadow: white -4px 0px 0px 0px;
     @media (max-width: 700px) {
-        line-height: 1.4rem;
+        line-height: 1.2rem;
         font-size: 0.9rem;       
     }
     @media (max-width: 575px) {
