@@ -1,50 +1,64 @@
-        const slidesContainer = document.querySelector('.slides-container');
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
+/* SLIDE DATA */
+const slides = [
+    {
+        img: "/Resource/Freedom-Fighter-Museum-Gallery/0.jpg",
+        year: "1830",
+        title: "Halba Rebellion",
+        text: "The Halba Rebellion (1774–1779) arose from intense power struggles among Bastar’s feudal chiefs. After Duriyav Dev launched a treacherous attack that killed the influential leader Ajmer Singh, the Halba community united in open revolt against the ruling forces. The retaliation was brutal, with many Halbas and their local chiefs reportedly thrown from waterfalls. The uprising eventually drew in both the Marathas and the East India Company, and by 1779 the conflict concluded with firm Maratha control over Bastar."
+    },
+    {
+        img: "/Resource/Freedom-Fighter-Museum-Gallery/1.jpg",
+        year: "1910",
+        title: "Bhumkal Revolt",
+        text: "The Bhumkal Revolt of 1910, known as the Bastar Rebellion, was a major tribal uprising against British rule. Led by the influential Gunda Dhur, the movement brought together several Bastar tribes who resisted exploitative taxes, forced labor, and the loss of forest rights. The revolt spread quickly as tribal warriors attacked colonial posts and briefly disrupted British authority. Although eventually crushed with harsh military force, the Bhumkal Revolt endures as a symbol of tribal unity, identity, and resistance."
+    },
+    {
+        img: "/Resource/Freedom-Fighter-Museum-Gallery/2.jpg",
+        year: "1942",
+        title: "Quit India Movement",
+        text: "In 1942, during the Quit India Movement, tribal communities of present-day Chhattisgarh played a meaningful role in the nationwide struggle against British rule. Inspired by the call for immediate independence, many tribal leaders and villagers organized protests, sheltered freedom fighters, and disrupted colonial administration. Though their participation is less documented than in urban centers, these communities contributed through acts of resistance, refusal of cooperation, and protection of local resources. Their involvement reflects the widespread desire for freedom across all sections of society."
+    }
+];
 
-        let currentIndex = 0;
-        let isAnimating = false;
+let index = 0;
 
-        function updateSlide(targetIndex) {
-            if (isAnimating || targetIndex === currentIndex) return;
-            isAnimating = true;
+const img = document.getElementById("timeline-img");
+const desc = document.getElementById("timeline-desc");
+const detail = document.getElementById("timeline-detail");
 
-            const direction = targetIndex > currentIndex ? 1 : -1;
-            const steps = Math.abs(targetIndex - currentIndex);
+/* LOAD ONE SLIDE */
+function loadSlide(i) {
+    const s = slides[i];
 
-            let step = 0;
-            const animate = () => {
-                if (step < steps) {
-                    currentIndex += direction;
-                    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    // Fade out animation
+    img.style.opacity = 0;
+    img.style.transform = "translateY(20px)";
+    desc.style.opacity = 0;
+    detail.style.opacity = 0;
 
-                    // Add transition classes for effect
-                    slides.forEach((slide, index) => {
-                        slide.classList.remove('leaving', 'entering');
-                        if (index === currentIndex - direction) {
-                            slide.classList.add('leaving');
-                        } else if (index === currentIndex) {
-                            slide.classList.add('entering');
-                        }
-                    });
+    setTimeout(() => {
+        img.src = s.img;
+        desc.textContent = s.desc;
 
-                    dots.forEach(d => d.classList.remove('active'));
-                    dots[currentIndex].classList.add('active');
+        detail.innerHTML = `
+      <h3>${s.year}</h3>
+      <h2>${s.title}</h2>
+      <p>${s.text}</p>
+    `;
 
-                    step++;
-                    setTimeout(animate, 800); // Match transition duration
-                } else {
-                    // Finalize
-                    slides.forEach(slide => slide.classList.remove('leaving', 'entering'));
-                    isAnimating = false;
-                }
-            };
-            animate();
-        }
+        // Fade in animation
+        img.style.opacity = 1;
+        img.style.transform = "translateY(0)";
+        desc.style.opacity = 1;
+        detail.style.opacity = 1;
+    }, 600);
+}
 
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                const targetIndex = parseInt(dot.getAttribute('data-slide'));
-                updateSlide(targetIndex);
-            });
-        });
+/* AUTO-CYCLE EVERY 4 SECONDS */
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    loadSlide(index);
+}, 15000);
+
+/* INITIAL LOAD */
+loadSlide(0);
