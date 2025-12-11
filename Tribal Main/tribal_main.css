@@ -60,7 +60,8 @@ body {
 
 .container {
 	padding: 2.5rem 2rem;
-	width: 80vw;
+  max-width: 1400px;
+	width: 60vw;
   margin: 5rem auto;
 	display: flex;
 	justify-content: center;
@@ -89,10 +90,10 @@ body {
 
 .container-text h1{
   box-shadow: -5px 0px var(--maroon);
-  padding-left: 10px;
+  padding: 10px 0px 10px 15px;
   margin-bottom: 1rem;
   background-color: #55000054;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 10px 10px 0px;
   @media (max-width: 1200px) {
     font-size: 2rem;
   }
@@ -103,7 +104,7 @@ body {
 
 .container-text p{
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7rem;
   text-align: justify;
   @media (max-width: 1200px) {
@@ -122,8 +123,13 @@ body {
 }
 
 .container img {
-  height: 15rem;
+  height: 22rem;
+  padding-left: 2rem;
   border-radius: 10px;
+  @media (max-width: 1800px) {
+    height: 15rem;
+    padding-left: 0rem;
+  }
   @media (max-width: 750px) {
     height: 10rem;
   }
